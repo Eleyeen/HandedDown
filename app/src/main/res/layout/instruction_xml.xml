@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    >
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/circle"
+    />
+    <TextView
+        android:layout_width="320dp"
+        android:id="@+id/title_Ints"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit sed do riusmod tempor"
+        android:textSize="15dp"
+    />
+</LinearLayout>

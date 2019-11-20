@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/container2"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MyDiscoverRecipesActivity">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/cardView"
+            android:id="@+id/frame"
+            >
+
+
+        </FrameLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="10dp"
+    android:layout_alignParentBottom="true"
+    android:layout_height="50dp">
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_navi"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+
+
+    <ImageView
+
+        android:id="@+id/iv_publi_recipe"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:src="@mipmap/publichdpi"/>
+
+    <ImageView
+        android:id="@+id/iv_upload"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:src="@mipmap/updateicon"/>
+
+    <ImageView
+        android:id="@+id/iv_privates_recipie"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:src="@mipmap/myrecipes"/>
+
+    <ImageView
+        android:id="@+id/iv_profile"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:src="@mipmap/profileicon"/>
+</LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

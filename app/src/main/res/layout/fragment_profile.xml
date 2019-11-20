@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.ProfileFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_cardView"
+        app:cardCornerRadius="40dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear_first_profile"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:padding="10dp"
+                    android:layout_marginLeft="15dp"
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear_Sec_profile"
+                android:layout_below="@id/linear_first_profile"
+                ><RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/profilepic"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <ImageView
+                    android:layout_width="139dp"
+                    android:layout_height="115dp"
+                    android:src="@mipmap/imgphoto"
+                    />
+
+            </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Abbi Wilson"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="19dp"
+                    />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/profile_cardView">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="300dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/text_Line1"-->
+                <!--android:layout_marginTop="16dp"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--&gt;-->
+                <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:src="@mipmap/imgsicon"-->
+                    <!--/>-->
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_marginLeft="16dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--&gt;-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/text1232"-->
+                        <!--android:text="Notification"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textSize="18dp"-->
+                        <!--android:textColor="#000"-->
+                        <!--/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_below="@+id/text1232"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Setting status"-->
+                        <!--android:textSize="15dp"-->
+                        <!--/>-->
+                <!--</RelativeLayout>-->
+
+
+            <!--</LinearLayout>-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_Line2"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="30dp"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/imgsicon"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text1233"
+                        android:text="Shared Recipes"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="#000"
+                        />
+
+                    <TextView
+                        android:layout_below="@+id/text1233"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Recipes people shared with you"
+                        android:textSize="15dp"
+                        />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_Line2"
+                android:id="@+id/text_Line3"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="30dp"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/imgsicon"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text1234"
+                        android:text="Favourite"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="#000"
+                        />
+
+                    <TextView
+                        android:layout_below="@+id/text1234"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Recipes you added in favourte"
+                        android:textSize="15dp"
+                        />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_Line3"
+                android:id="@+id/text_Line4"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="30dp"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/imgsicon"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text1235"
+                        android:text="Profile Setting"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="#000"
+                        />
+
+                    <TextView
+                        android:layout_below="@+id/text1235"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Edit your personal info"
+                        android:textSize="15dp"
+                        />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_Line4"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/textLine_Last"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/imgsicon"
+                    />
+                <RelativeLayout
+                    android:id="@+id/relative_invite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text123"
+                        android:text="Invite Friends"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:textColor="#000"
+                        />
+
+                    <TextView
+                        android:layout_below="@+id/text123"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Share our app with yor loved ones"
+                        android:textSize="15dp"
+                        />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/textLine_Last"
+                android:layout_marginTop="40dp"
+                android:id="@+id/logout_profilbtn"
+                android:background="@drawable/custoombutton"
+                android:text="LOGOUT"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

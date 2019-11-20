@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RecipeNameActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="10dp"
+        android:layout_height="match_parent"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        android:background="#F6F6F6"
+        android:id="@+id/nestedscrolView"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/mLrecipe_Text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/back_iconImage"
+                    android:src="@drawable/back_icon"
+                    />
+
+            <TextView
+                android:layout_marginLeft="40dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Recipe Name Here"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:gravity="center"
+        android:id="@+id/recipe_Text"
+        />
+            </LinearLayout>
+
+            <ImageView
+                android:background="#000"
+                android:layout_width="330dp"
+                android:layout_height="220dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/frame_image_recipe"
+                android:layout_below="@+id/mLrecipe_Text"
+                />
+            <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/mLrecipe_Text"
+        android:src="@mipmap/heart"
+        android:id="@+id/heartImage"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/heartImage"
+        android:src="@mipmap/download"
+        />
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="330dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="180dp"
+        android:id="@+id/main_CarView"
+        android:background="#FFFFFF"
+        android:layout_below="@id/frame_image_recipe"
+        android:layout_centerHorizontal="true"
+        >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:id="@+id/lainear_cardView1"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="10dp"
+                android:id="@+id/card_ViewMin"
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="14dp"
+                android:padding="8dp"
+
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="demo"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#01DC9D"
+                    android:id="@+id/cardView_20Min"
+                    />
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_below="@id/cardView_20Min"
+                    android:text="demo"
+                    android:id="@+id/valueone"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+
+                    />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="130dp"
+                android:id="@+id/car_ViewMedium"
+                android:layout_height="70dp"
+                app:cardCornerRadius="14dp"
+
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:padding="8dp"
+
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="demo"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:textColor="#01DC9D"
+                        android:id="@+id/cardView_medium"
+                        />
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:layout_below="@id/cardView_medium"
+                        android:text="demo"
+                        android:id="@+id/valueTwo"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_below="@+id/lainear_cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_View12"
+            app:cardCornerRadius="14dp"
+
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:padding="8dp"
+            android:layout_gravity="center"
+
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="demo"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#01DC9D"
+                    android:id="@+id/cardView_12"
+                    />
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_below="@id/cardView_12"
+                    android:text="demo"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tyur"
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="130dp"
+            android:id="@+id/car_View200g"
+            app:cardCornerRadius="14dp"
+
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:padding="8dp"
+            android:layout_gravity="center"
+
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="demo"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="#01DC9D"
+                    android:id="@+id/cardView_200g"
+                    />
+
+                <TextView
+                    android:id="@+id/rtyui"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_below="@id/cardView_200g"
+                    android:text="demo"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+    </android.support.v7.widget.CardView>
+            
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ingredient"
+                android:text="Ingredients"
+                android:layout_below="@id/main_CarView"
+                android:layout_centerHorizontal="true"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_margin="8dp"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="320dp"
+                android:layout_centerHorizontal="true"
+
+                android:layout_height="80dp"
+                android:layout_below="@+id/ingredient"
+                android:id="@+id/recycle_ingredient"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="330dp"
+                app:cardCornerRadius="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recycle_ingredient"
+                android:layout_marginLeft="18dp"
+                android:id="@+id/instruction_CardView"
+                android:layout_marginTop="18dp"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Instruction"
+                    android:textSize="25dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/instruction"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    />
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/instruction"
+                        android:id="@+id/Recycle_View_instruction"
+                        >
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/lainear_Instruction1"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:layout_below="@+id/instruction"-->
+                        <!--&gt;-->
+                        <!--<ImageView-->
+                            <!--android:layout_width="30dp"-->
+                            <!--android:layout_height="30dp"-->
+                            <!--android:src="@drawable/circle"-->
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit sed do riusmod tempor"-->
+                            <!--android:textSize="15dp"-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/lainear_Instruction2"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:layout_below="@+id/lainear_Instruction1"-->
+                        <!--&gt;-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="30dp"-->
+                            <!--android:layout_height="30dp"-->
+                            <!--android:src="@drawable/circle"-->
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit sed do riusmod tempor"-->
+                            <!--android:textSize="15dp"-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/lainear_Instruction3"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:layout_below="@+id/lainear_Instruction2"-->
+                        <!--&gt;-->
+                        <!--<ImageView-->
+                            <!--android:layout_width="30dp"-->
+                            <!--android:layout_height="30dp"-->
+                            <!--android:src="@drawable/circle"-->
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit sed do riusmod tempor"-->
+                            <!--android:textSize="15dp"-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/lainear_Instruction4"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:layout_below="@+id/lainear_Instruction3"-->
+                        <!--&gt;-->
+                        <!--<ImageView-->
+                            <!--android:layout_width="30dp"-->
+                            <!--android:layout_height="30dp"-->
+                            <!--android:src="@drawable/circle"-->
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit sed do riusmod tempor"-->
+                            <!--android:textSize="15dp"-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/lainear_Instruction5"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:layout_below="@+id/lainear_Instruction4"-->
+                        <!--&gt;-->
+                        <!--<ImageView-->
+                            <!--android:layout_width="30dp"-->
+                            <!--android:layout_height="30dp"-->
+                            <!--android:src="@drawable/circle"-->
+                            <!--/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit sed do riusmod tempor"-->
+                            <!--android:textSize="15dp"-->
+                            <!--/>-->
+                    <!--</LinearLayout>-->
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

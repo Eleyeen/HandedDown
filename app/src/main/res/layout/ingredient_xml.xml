@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        cardView:cardCornerRadius="4dp"
+        >
+        <TextView
+            android:id="@+id/ingredienXmlText"
+            android:layout_width="155dp"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+
+            />
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

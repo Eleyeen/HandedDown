@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CreateAccountActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="10dp"
+        android:layout_height="match_parent"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        android:background="#FCFDFD"
+        android:id="@+id/nestedscrolView"
+        >
+        <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:src="@mipmap/singuppic"
+        android:scaleType="fitXY"
+        android:id="@+id/imagesinup"
+        />
+
+    <TextView
+        android:layout_width="80dp"
+        android:text="SIGN IN"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#01DC9D"
+        android:id="@+id/sign_In_create"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="35dp"
+        android:layout_alignParentRight="true"
+                />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Create your account"
+        android:layout_below="@+id/imagesinup"
+        android:layout_centerHorizontal="true"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:id="@+id/login_Text"
+        />
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet consectetur adipiscing elit sed do riusmod tempor"
+        android:layout_below="@+id/login_Text"
+        android:layout_centerHorizontal="true"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:id="@+id/login_Text3"
+        android:layout_marginBottom="15dp"
+        />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_login"
+        app:errorEnabled="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_Text3"
+
+
+        >
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:id="@+id/text_create_name"
+            android:inputType="textPersonName"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/mobile_login"
+        app:errorEnabled="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/name_login"
+
+
+        >
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:hint="Mobile#"
+            android:id="@+id/mobile_num_create"
+            android:inputType="number"
+
+
+
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/email_login"
+        app:errorEnabled="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mobile_login"
+
+
+        >
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:id="@+id/email_text_create"
+
+
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_login"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        >
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_login"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="9dp"
+            android:layout_below="@+id/email_login"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true"
+            >
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:id="@+id/password_text_create"
+                android:inputType="textPassword"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:src="@mipmap/notselected"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/password_btn_create"
+            />
+
+    </LinearLayout>
+    
+    
+    
+    
+    
+
+
+    <TextView
+        android:id="@+id/forgettext"
+        android:layout_marginBottom="40dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/facebook"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="17dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/linear_pass"
+        />
+
+
+</RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
